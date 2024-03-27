@@ -19,11 +19,29 @@ export default function Login(){
             {!user.name && (
                 <div>
                     <div>
-                    <input placeholder="Enter Your Name" type="text" value={name} onChange={(e)=>setname(e.target.value)} required />
+                        <input 
+                            placeholder="Enter Your Name" 
+                            type="text" 
+                            value={name} 
+                            onChange={(e)=>setname(e.target.value)} 
+                            required 
+                        />
                     </div>
-                    <input placeholder="Enter Your Age" type="number" value={age} onChange={(e)=>setage(e.target.value)} />
                     <div>
-                    <input placeholder="Enter Your Email" type="email" value={email} onChange={(e)=>setemail(e.target.value)} />
+                        <input 
+                            placeholder="Enter Your Age" 
+                            type="number" 
+                            value={age} 
+                            onChange={(e)=>setage(e.target.value)} 
+                        />
+                    </div>
+                    <div>
+                        <input 
+                            placeholder="Enter Your Email" 
+                            type="email" 
+                            value={email} 
+                            onChange={(e)=>setemail(e.target.value)} 
+                        />
                     </div>
                 </div>
             )}

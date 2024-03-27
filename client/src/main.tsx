@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 import UserReducer from './features/User.tsx'
+import ThemeReducer from './features/Color.tsx'
 
 //to init all state in store
 import { configureStore } from '@reduxjs/toolkit'
@@ -12,7 +13,8 @@ import { Provider } from 'react-redux'
 
 const store = configureStore({
   reducer : {
-    user: UserReducer
+    user : UserReducer,
+    theme : ThemeReducer
   }  // to handle every state seperately
 })
 
