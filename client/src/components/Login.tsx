@@ -13,7 +13,7 @@ export default function Login(){
     const [name,setname] = useState("");
     const [age,setage] = useState("");
     const [email,setemail] = useState("");
-    const user = useSelector(state => state.user.value)
+    const user = useSelector((state:any) => state.user.value)
     return(
         <form onSubmit={(e)=>{e.preventDefault()}}>
             {!user.name && (
